@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.3fr;
+    position: relative;
+}
+/* #1da1f2 */
+.icons{
+    width: 27px;
+    object-fit: contain;
+}
+.twitter__logo {
+    padding: 1rem 0rem 0rem 1rem;
+}
+.twitter__logo > .icons {
+    width: 28px;
+    object-fit: contain;
+}
+.icons__name{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.icons__name > h3 {
+    padding-left: 1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.icons__name:hover{
+    background-color: rgb(228, 244, 255);
+    border-radius: 2rem;
+    color: #1da1f2;
+}
+.sidebar {
+    height: 100vh;
+    padding-right: 4rem;
+    padding-left: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items :initial;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.sidebar__menu{
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sidebar__menu > button {
+    background-color: #1da1f2;
+    color: white;
+    padding: 0.7rem 2rem;
+    border: #1da1f2;
+    border-radius: 2rem;
+    font-weight: bold;
+    margin: 1rem 0rem;
+    cursor: pointer;
+}
+.sidebar__footer {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+}
+.profile__details > h5 , small {
+    padding-left: 0.5rem;
+}
+.more > img {
+    padding-left: 2rem;
+}
+.profile {
+    width: 2.5rem;
+    object-fit: contain;
+    border-radius: 100%;
+}
+.tweets{
+    border: 0.5px solid rgb(241, 241, 241);
+    position: relative;
+}
+.tweets__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    position: sticky;
+    background-color: white;
+    top: 0;
+}
+.divider{
+    height: 0.7rem;
+    background-color: rgb(241, 241, 241)
+}
+.divider__thin{
+    height: 1px;
+    background-color: rgb(241, 241, 241)
+}
+.icons__small{
+    width: 25px;
+    object-fit: contain;
+}
+.tweet {
+    width: 100%;
+    padding: 0.5rem;
+    border-style: none;
+    font-size: 1.2rem;
+}
+.input{
+    width: 455px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+.tweet__input   {
+    display: flex;
+    justify-content: space-around;
+    padding : 1rem 0.5rem;
+    align-items:flex-start;
+}
+
+.profile-lg{
+    width: 45px;
+    border-radius: 100%;
+}
+.tweet__menu {
+    padding: 1rem 0rem 0.5rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tweet__menu > button {
+    background-color: #1da1f2;
+    color: white;
+    border-style: none;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: bolder;
+}
+.menu{
+    flex: 0.5;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+}
+.each__tweet{
+    display: flex;
+    align-items:flex-start;
+    padding: 0.6rem;
+}
+.user{
+    display: flex;
+    justify-content: space-between;
+}
+.userId{
+    display: flex;
+    align-items: center;
+    padding: 0rem 0.5rem;
+}
+.userId > .name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.userId > .handle,.time{
+    font-size: 14px;
+    font-weight: lighter;
+    color:gray;
+    padding-left: 0.5rem;
+}
+.time > span {
+    padding-right: 0.3rem;
+}
+.tweet__text{
+    padding: 0rem 0.5rem;
+}
+.tweet__text > .text {
+    font-size: 14px;
+    line-height: 1.3;
+
+}
+.tweet__addIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem 0.5rem 0.5rem;
+}
+.tweet__addIcon > img {
+    width: 20px;
+}
+.profile__img{
+    padding-top: 4px;
+}
+.recents{
+    height: 100vh;
+    padding-right: 8.5rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+.recents::-webkit-scrollbar{
+    display: none;
+}
+.trending{
+    border-radius: 1.5rem;
+    border: 1px solid black;
+    border-style: none;
+    background-color: rgb(243, 242, 242);
+    margin-top: 2rem;
+}
+.newsHead > small {
+    padding: 0;
+}
+.trending > .divider__thin {
+    background-color: rgb(255, 255, 255);
+}
+.newsHead , .trending__heading{
+    padding: 1rem;
+}
+.search{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+.search > input {
+    padding: 1rem;
+    width: 100%;
+    background-color: rgb(243, 242, 242);
+    border-style: none;
+    border-radius: 1.5rem;
+    font-size: large;
+    margin-bottom: 4px;
+}
